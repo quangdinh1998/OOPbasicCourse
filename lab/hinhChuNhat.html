@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    
+    <script>
+
+        class Rectangle {
+            width = 200;
+            height = 100;
+            perimeter() {
+                alert(' chu vi hinh chu nhat nay la: ' + ( this.width + this.height) * 2);
+            }
+            superficies() {
+                alert(' Dien tich hinh chu nhat nay la: ' + this.width * this.height);
+            }
+        }
+
+        let myRectangle = new Rectangle();
+        myRectangle.width = 250;
+        myRectangle.height = 170;
+        myRectangle.perimeter();
+        myRectangle.superficies();
+
+
+    </script>
+
+</body>
+</html>
