@@ -8,22 +8,25 @@
     <script>
 
         class Rectangle {
-            width = 200;
-            height = 100;
+            constructor(width, height) {
+                this.width = width;
+                this. height = height;
+            }
             perimeter() {
-                alert(' chu vi hinh chu nhat nay la: ' + ( this.width + this.height) * 2);
+                let P = 2 * (this.width + this.height);
+                return P;
             }
             superficies() {
-                alert(' Dien tich hinh chu nhat nay la: ' + this.width * this.height);
+                let  S = (this.width * this.height); 
+                return S;
             }
         }
 
-        let myRectangle = new Rectangle();
-        myRectangle.width = 250;
-        myRectangle.height = 170;
-        myRectangle.perimeter();
-        myRectangle.superficies();
-
+        let myRectangle1 = new Rectangle(100,50);
+        let P = myRectangle1.perimeter();
+        alert(' chu vi hinh chu nhat nay la: ' + P);
+        let S =  myRectangle1.superficies();
+        alert(' Dien tich hinh chu nhat nay la: ' + S);
 
     </script>
 
