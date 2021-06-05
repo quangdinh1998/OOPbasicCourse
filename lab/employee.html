@@ -44,8 +44,7 @@
                 return annualSalary;
             }
 
-            raiseSalary() {
-                let percent = + prompt(' Tang bao nhieu phan tram');
+            raiseSalary(percent) {
                 let raiseSalary = this.salary*( 1 + percent/100);
                 return raiseSalary;
             }
@@ -56,7 +55,7 @@
             document.write('Ho va ten: ' +employee1.getName() + '<br>');
             document.write( 'Luong/ thang: ' +employee1.getSalary() + '<br>');
             document.write('Luong / nam: ' +employee1.getAnnualSalary() + '<br>');
-            let salaryPerMonthRaise = employee1.raiseSalary();
+            let salaryPerMonthRaise = employee1.raiseSalary(20);
             document.write('Luong thang sau khi tang: ' + salaryPerMonthRaise + '<br>');
             document.write('Luong nam sau khi tang: ' +(salaryPerMonthRaise * 12) + '<br>');
 
